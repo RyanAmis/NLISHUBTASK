@@ -12,7 +12,6 @@ import pysftp
 def send_task_completed_email(bacs_file_num, ndf_file_num, email_num):
     subject = 'NLIS Hub Bacs Transfer Task'
     body = f'''The NLIS Hub Bacs Transfer Task has been successfully completed for today.
-
     BACs files moved: {bacs_file_num}
     NDF files moved: {ndf_file_num}
     Emails moved: {email_num}
@@ -62,7 +61,7 @@ CORP_HUB_STATEMENTS_YEAR_MONTH_FOLDER_PATH = CORP_HUB_STATEMENTS_PATH + YEAR + '
 SERVER = 'smtp.landmark.co.uk'
 FROM = 'NLISHubBacsTransferTask@landmark.co.uk'
 RECIPIENTS = [
-    'nathan.fairman@landmark.co.uk', 'wayne.algar@landmark.co.uk', 'ryan.amis@landmark.co.uk',
+    'jacob.pagan@landmark.co.uk', 'wayne.algar@landmark.co.uk', 'ryan.amis@landmark.co.uk',
     'matthew.hobson@landmark.co.uk', 'matthew.ellis@landmark.co.uk'
 ]
 
